@@ -56,8 +56,8 @@ public class CarsDatabase extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
-        values.put(KEY_NAME, user.getName()); // Contact Name
-        values.put(KEY_DETAILS, user.getDetials()); // Contact Details
+        values.put(KEY_NAME, user.getName()); // User Name
+        values.put(KEY_DETAILS, user.getDetials()); // User Details
 
         // Inserting Row
         db.insert(TABLE_NAME, null, values);
@@ -117,14 +117,6 @@ public class CarsDatabase extends SQLiteOpenHelper {
 
             cursor.close();
         }
-       /* Cursor cursor = db.query(TABLE_NAME, new String[] { KEY_ID,
-                        KEY_NAME, KEY_DETAILS }, KEY_NAME + "=?",
-                new String[] { String.valueOf(name) }, null, null, null, null);
-        if (cursor != null && cursor.moveToFirst())
-            cursor.moveToFirst();
-
-            User user = new User(cursor.getColumnIndexOrThrow(KEY_ID),
-                    cursor.getColumnName(1), cursor.getColumnName(2));*/
             return user;
 
     }

@@ -73,7 +73,7 @@ public class SyncUtils {
                 b);                                      // Extras
     }
 
-   /* public static void periodicSync()
+    public static void periodicSync()
     {
 
         Bundle b = new Bundle();
@@ -82,5 +82,5 @@ public class SyncUtils {
                CONTENT_AUTHORITY,                        // Content authority
                 b,SYNC_FREQUENCY);
 
-    }*/
+    }
 }
